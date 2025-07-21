@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import Header from './components/header/header'
 import Footer from './components/footer/footer'
-import Hero from './components/hero/Hero'
-import ServiceSection from './components/Services/ServiceSection'
-import WhyChooseUs from './components/whychoose/WhyChooseSection'
+import Hero from "./components/pages/home/HeroSection/Hero";
+import ServiceSection from "./components/pages/home/ServiceSection/ServiceSection";
+import WhyChooseSection from "./components/pages/home/WhyChooseSection/WhyChooseSection";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
      <Header />
      <Hero />
      <ServiceSection />
-     <WhyChooseUs />
+     <WhyChooseSection />
      <Footer />
     </>
   )

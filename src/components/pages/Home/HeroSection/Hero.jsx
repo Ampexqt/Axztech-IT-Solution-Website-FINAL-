@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Hero.module.css';
-import logo from '../../assets/images/axztech-logo.png';
+import logo from '../../../../assets/images/axztech-logo.png';
 import { FaArrowRight } from 'react-icons/fa';
 
 const Hero = () => (
