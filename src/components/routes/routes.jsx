@@ -6,6 +6,9 @@ import Contact from '../pages/Contacts/contact';
 import React from 'react';
 import OurStory from '../pages/AboutUs/OurStory/OurStory';
 import Introduction from '../pages/AboutUs/AboutIntroduction/Introduction';
+import MissionAndValues from '../pages/AboutUs/MissionAndValues/MissionAndValues';
+import LeadershipTeam from '../pages/AboutUs/LeadershipTeam/LeadershipTeam';
+import WhyChooseUs from '../pages/AboutUs/WhyChooseUs/WhyChooseUs';
 
 // Placeholder component for Products
 const Products = () => <div style={{padding: '2rem', textAlign: 'center'}}>Products page coming soon.</div>;
@@ -22,6 +25,11 @@ const AboutPage = () => (
   <>
     <Introduction />
     <OurStory />
+    <MissionAndValues />
+    <div style={{ marginTop: '56px' }}>
+      <LeadershipTeam />
+    </div>
+    <WhyChooseUs />
   </>
 );
 
@@ -32,6 +40,8 @@ const AppRoutes = () => (
     <Route path="/products" element={<Products />} />
     <Route path="/contact" element={<Contact />} />
     <Route path="/our-story" element={<OurStory />} />
+    <Route path="/about/mission-and-values" element={<MissionAndValues />} />
+    <Route path="/about/why-choose-us" element={<WhyChooseUs />} />
   </Routes>
 );
 

@@ -1,0 +1,117 @@
+.missionSection {
+  padding: 60px 0 80px 0;
+  background: #f8f9fb;
+  text-align: center;
+}
+
+.title {
+  margin-top: 48px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #181d24;
+  font-family: 'Inter', 'Poppins', sans-serif;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(24, 29, 36, 0.06);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 340px;
+  min-width: 280px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px rgba(24, 29, 36, 0.12);
+}
+
+.iconWrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #181d24;
+  font-family: 'Inter', 'Poppins', sans-serif;
+}
+
+.cardText {
+  font-size: 1rem;
+  color: #5a6270;
+  text-align: left;
+  font-family: 'Inter', 'Poppins', sans-serif;
+}
+
+@media (max-width: 900px) {
+  .cardsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .card {
+    max-width: 95vw;
+    min-width: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .cardText {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .missionSection {
+    padding: 24px 0 32px 0;
+  }
+  .title {
+    font-size: 1.3rem;
+    margin-top: 24px;
+    margin-bottom: 18px;
+  }
+  .card {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+    max-width: 98vw;
+    min-width: 0;
+  }
+  .iconWrapper {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+  .icon {
+    font-size: 1.3rem;
+  }
+  .cardTitle {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .cardText {
+    font-size: 0.92rem;
+  }
+}
