@@ -2,7 +2,8 @@
   background: #232b33;
   color: #e5e7eb;
   padding: 3rem 2rem 1.5rem 2rem;
-  font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
+  margin-top: 80px;
 }
 
 .footerContent {
@@ -178,5 +179,11 @@
   }
   .socialLinks a {
     font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    margin-top: 32px;
   }
 }

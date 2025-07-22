@@ -1,0 +1,121 @@
+/* Copy styles for: formCard, formTitle, formDesc, form, formRow, formGroup, submitButton */
+.formCard {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 400;
+  background: #fff;
+  border-radius: 0 16px 16px 0;
+  padding: 32px 28px;
+  box-shadow: none;
+  flex: 2;
+  min-width: 320px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.formTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.formDesc {
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.formRow {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.formGroup label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 0;
+  outline: none;
+  transition: border 0.2s;
+}
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  border-color: #1746a2;
+}
+.submitButton {
+  background: #1746a2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.submitButton:hover {
+  background: #1a56d9;
+}
+
+.formGroup select {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  border-radius: 6px;
+  background: #fff;
+  color: #222;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .formCard {
+    border-radius: 0 0 16px 16px;
+    max-width: 100%;
+    min-width: 0;
+    padding: 24px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .formRow {
+    flex-direction: column;
+    gap: 0;
+  }
+  .formGroup {
+    width: 100%;
+  }
+  .formCard {
+    padding: 16px 4px;
+  }
+  .submitButton {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+  .formTitle {
+    font-size: 1.2rem;
+  }
+  .formDesc {
+    font-size: 0.95rem;
+  }
+  .formGroup select {
+    font-size: 0.98rem;
+    padding: 10px 8px;
+  }
+} 

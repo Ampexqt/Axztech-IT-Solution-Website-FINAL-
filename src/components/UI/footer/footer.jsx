@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './footer.module.css';
-import logo from '../../assets/images/axztech-logo.png';
+import logo from '../../../assets/images/axztech-logo.png';
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
 import { Link } from 'react-router-dom';

@@ -1,5 +1,5 @@
-import Header from './components/header/header'
-import Footer from './components/footer/footer'
+import Header from './components/UI/header/header'
+import Footer from './components/UI/footer/footer'
 import AppRoutes from './components/routes/routes'
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';

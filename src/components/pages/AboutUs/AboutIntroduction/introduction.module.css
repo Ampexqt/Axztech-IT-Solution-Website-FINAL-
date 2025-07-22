@@ -11,7 +11,7 @@
 }
 
 .title {
-  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
   color: #111;
@@ -20,7 +20,7 @@
 }
 
 .subtitle {
-  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
   color: #2563eb;

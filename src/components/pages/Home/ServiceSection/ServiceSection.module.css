@@ -22,19 +22,46 @@
   justify-content: center;
   gap: 32px;
   flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .card {
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 24px 0 rgba(16, 30, 54, 0.06);
-  padding: 40px 32px 32px 32px;
+  padding: 28px 18px 18px 18px;
   width: 340px;
   text-align: left;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   transition: box-shadow 0.2s;
+  height: 300px;
+  min-height: 300px;
+  max-height: 300px;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    height: 320px;
+    min-height: 320px;
+    max-height: 320px;
+  }
+}
+
+@media (max-width: 900px) {
+  .cardsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    margin-bottom: 24px;
+  }
 }
 
 .card:hover {
@@ -74,6 +101,7 @@
   color: #6b7280;
   font-size: 1rem;
   margin-bottom: 24px;
+  flex-grow: 1;
 }
 
 .learnMore {
@@ -84,6 +112,8 @@
   align-items: center;
   gap: 4px;
   transition: color 0.2s;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
 .learnMore:hover {

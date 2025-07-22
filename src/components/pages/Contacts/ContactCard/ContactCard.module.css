@@ -1,0 +1,61 @@
+/* Copy styles for: infoCard, infoTitle, infoDesc, infoItem, icon, infoLabel, infoValue */
+.infoCard {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-weight: 400;
+  background: #1746a2;
+  color: #fff;
+  border-radius: 16px 0 0 16px;
+  padding: 32px 28px;
+  box-shadow: none;
+  flex: 1;
+  margin-right: 0;
+  min-width: 320px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.infoTitle {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+.infoDesc {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.icon {
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #1a56d9;
+  border-radius: 50%;
+}
+.infoLabel {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.infoValue {
+  font-weight: 400;
+  font-size: 0.95rem;
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .infoCard {
+    border-radius: 16px 16px 0 0;
+    max-width: 100%;
+    min-width: 0;
+    padding: 24px 10px;
+  }
+} 

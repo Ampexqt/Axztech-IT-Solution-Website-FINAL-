@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './header.module.css';
-import logo from '../../assets/images/axztech-logo.png';
+import logo from '../../../assets/images/axztech-logo.png';
 import { Link, useLocation } from 'react-router-dom';
 
 function Header() {

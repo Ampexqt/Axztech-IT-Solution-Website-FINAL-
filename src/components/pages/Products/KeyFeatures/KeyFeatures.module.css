@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 .keyFeaturesSection {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   padding: 56px 0 64px 0;
   max-width: 1200px;
   margin: 0 auto;
@@ -72,6 +72,7 @@
   margin-bottom: 10px;
   color: #181c32;
   letter-spacing: -0.2px;
+  font-family: 'Inter', system-ui, sans-serif;
 }
 
 .cardDesc {
@@ -79,6 +80,7 @@
   font-size: 1.01rem;
   line-height: 1.6;
   font-weight: 400;
+  font-family: 'Inter', system-ui, sans-serif;
 }
 
 @media (max-width: 900px) {
