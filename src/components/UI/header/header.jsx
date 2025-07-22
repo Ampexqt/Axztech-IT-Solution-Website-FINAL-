@@ -28,16 +28,16 @@ function Header() {
         <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
           <ul className={styles.navList}>
             <li className={styles.navItem}>
-              <Link to="/" className={`${styles.navLink} ${location.pathname === '/' ? styles.active : ''}`} onClick={handleNavClick}>Home</Link>
+              <Link to="/" className={`${styles.navLink} ${styles.navLinkFancy} ${location.pathname === '/' ? styles.active : ''}`} onClick={handleNavClick}>Home</Link>
             </li>
             <li className={styles.navItem}>
-              <Link to="/about" className={`${styles.navLink} ${location.pathname === '/about' ? styles.active : ''}`} onClick={handleNavClick}>About Us</Link>
+              <Link to="/about" className={`${styles.navLink} ${styles.navLinkFancy} ${location.pathname === '/about' ? styles.active : ''}`} onClick={handleNavClick}>About Us</Link>
             </li>
             <li className={styles.navItem}>
-              <Link to="/products" className={`${styles.navLink} ${location.pathname === '/products' ? styles.active : ''}`} onClick={handleNavClick}>Products</Link>
+              <Link to="/products" className={`${styles.navLink} ${styles.navLinkFancy} ${location.pathname === '/products' ? styles.active : ''}`} onClick={handleNavClick}>Products</Link>
             </li>
             <li className={styles.navItem}>
-              <Link to="/contact" className={`${styles.navLink} ${location.pathname === '/contact' ? styles.active : ''}`} onClick={handleNavClick}>Contact Us</Link>
+              <Link to="/contact" className={`${styles.navLink} ${styles.navLinkFancy} ${location.pathname === '/contact' ? styles.active : ''}`} onClick={handleNavClick}>Contact Us</Link>
             </li>
           </ul>
           <button className={styles.ctaButton}>Get Started</button>
