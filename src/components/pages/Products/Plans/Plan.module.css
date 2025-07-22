@@ -1,0 +1,273 @@
+.pricingWrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 16px 60px 16px;
+  background: #f8f9fb;
+  box-sizing: border-box;
+}
+
+.heading {
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.subheading {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #555;
+  margin-bottom: 36px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px; /* Increased gap for more space between arrows and cards */
+}
+
+.arrowButton {
+  background: #0022e6;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px 0 rgba(0,34,230,0.13);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  outline: none;
+  margin: 0 0; /* Remove default margin */
+}
+.arrowButton:active, .arrowButton:focus {
+  background: #0011a8;
+}
+
+.arrowIcon {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plansContainer {
+  display: flex;
+  gap: 28px;
+  width: 100%;
+  max-width: 950px;
+  justify-content: center;
+}
+
+.planCard {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.06);
+  padding: 32px 24px 28px 24px;
+  min-width: 270px;
+  max-width: 320px;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: box-shadow 0.2s, border 0.2s;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+/* Active (center) card styling */
+.active {
+  border: 2px solid #0022e6;
+  box-shadow: 0 4px 24px 0 rgba(0,34,230,0.10);
+  z-index: 2;
+}
+.active::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 18px;
+  background: #0022e6;
+  border-radius: 12px 12px 0 0;
+}
+.active .planTitle {
+  margin-top: 18px;
+}
+.active .ctaButton {
+  background: #0022e6;
+  color: #fff;
+}
+
+.planContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.planTitle {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1.18rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #181818;
+  position: relative;
+  z-index: 1;
+}
+
+.planPriceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.planPrice {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #181818;
+}
+
+.planPeriod {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1.1rem;
+  color: #888;
+  font-weight: 400;
+}
+
+.planDescription {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 18px;
+  min-height: 48px;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+
+.featureItem {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.checkmark {
+  color: #0022e6;
+  font-size: 1.1rem;
+  margin-right: 8px;
+}
+
+.ctaButton {
+  margin-top: auto;
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  background: #e7eaff;
+  color: #0022e6;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1.08rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.ctaButton:hover {
+  background: #0022e6;
+  color: #fff;
+}
+
+.mobileArrows {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .plansContainer {
+    gap: 16px;
+    max-width: 700px;
+  }
+  .planCard {
+    min-width: 220px;
+    max-width: 270px;
+    padding: 24px 12px 20px 12px;
+  }
+  .carousel {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    gap: 18px;
+  }
+  .plansContainer {
+    gap: 8px;
+    max-width: 95vw;
+  }
+  .planCard {
+    min-width: 180px;
+    max-width: 220px;
+    padding: 18px 6px 16px 6px;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .subheading {
+    font-size: 1rem;
+  }
+  .arrowButton {
+    width: 40px;
+    height: 40px;
+  }
+  .arrowIcon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .pricingWrapper {
+    padding: 24px 2vw 36px 2vw;
+  }
+  .plansContainer {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  .carousel {
+    flex-direction: column;
+    gap: 0;
+  }
+  .arrowButton {
+    margin: 0;
+  }
+  .mobileArrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 18px;
+  }
+  .planCard {
+    min-width: 90vw;
+    max-width: 98vw;
+    width: 100%;
+    padding: 18px 8px 16px 8px;
+  }
+}

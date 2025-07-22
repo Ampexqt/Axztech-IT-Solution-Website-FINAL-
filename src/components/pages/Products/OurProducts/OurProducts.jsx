@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './OurProducts.module.css';
 import SolutionsServerPortal from '../SolutionsServerPortal/SolutionsServerPortal';
 import KeyFeatures from '../KeyFeatures/KeyFeatures.jsx';
+import Plan from '../Plans/Plan';
 
 const OurProducts = () => {
   return (
@@ -12,6 +13,7 @@ const OurProducts = () => {
       </p>
       <SolutionsServerPortal />
       <KeyFeatures />
+      <Plan />
     </div>
   );
 };
