@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Outlet } from 'react-router-dom';
 import Hero from '../pages/home/HeroSection/Hero';
 import ServiceSection from '../pages/home/ServiceSection/ServiceSection';
 import WhyChooseSection from '../pages/home/WhyChooseSection/WhyChooseSection';
@@ -9,9 +9,9 @@ import Introduction from '../pages/AboutUs/AboutIntroduction/Introduction';
 import MissionAndValues from '../pages/AboutUs/MissionAndValues/MissionAndValues';
 import LeadershipTeam from '../pages/AboutUs/LeadershipTeam/LeadershipTeam';
 import WhyChooseUs from '../pages/AboutUs/WhyChooseUs/WhyChooseUs';
-
-// Placeholder component for Products
-const Products = () => <div style={{padding: '2rem', textAlign: 'center'}}>Products page coming soon.</div>;
+import OurProducts from '../pages/Products/OurProducts/OurProducts';
+import SolutionsServerPortal from '../pages/Products/SolutionsServerPortal/SolutionsServerPortal';
+import KeyFeatures from '../pages/Products/KeyFeatures/KeyFeatures.jsx';
 
 const Home = () => (
   <>
@@ -33,11 +33,17 @@ const AboutPage = () => (
   </>
 );
 
+const ProductsPage = () => <Outlet />;
+
 const AppRoutes = () => (
   <Routes>
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<AboutPage />} />
-    <Route path="/products" element={<Products />} />
+    <Route path="/products" element={<ProductsPage />}>
+      <Route index element={<OurProducts />} />
+      <Route path="ssp" element={<SolutionsServerPortal />} />
+      <Route path="KeyFeatures" element={<KeyFeatures />} />
+    </Route>
     <Route path="/contact" element={<Contact />} />
     <Route path="/our-story" element={<OurStory />} />
     <Route path="/about/mission-and-values" element={<MissionAndValues />} />

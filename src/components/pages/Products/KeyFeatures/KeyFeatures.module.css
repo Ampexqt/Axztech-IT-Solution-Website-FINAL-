@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+.keyFeaturesSection {
+  font-family: 'Inter', sans-serif;
+  padding: 56px 0 64px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #181c32;
+  letter-spacing: -0.5px;
+}
+
+.subheading {
+  font-size: 1.18rem;
+  color: #444950;
+  margin-bottom: 44px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(30, 34, 90, 0.09);
+  padding: 32px 24px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+  text-align: left;
+  min-height: 220px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px 0 rgba(30, 34, 90, 0.13);
+}
+
+.iconWrapper {
+  background: #eef2ff;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  color: #6366f1;
+  font-size: 2.1rem;
+}
+
+.cardTitle {
+  font-size: 1.22rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #181c32;
+  letter-spacing: -0.2px;
+}
+
+.cardDesc {
+  color: #444950;
+  font-size: 1.01rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .keyFeaturesSection {
+    padding: 32px 4px 40px 4px;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .card {
+    padding: 22px 12px 18px 12px;
+  }
+}
