@@ -62,7 +62,7 @@
 }
 
 .ctaButton {
-  background: #1e1eff;
+  background: #3730a3;
   color: #fff;
   font-size: 1.1rem;
   font-weight: 600;
@@ -71,10 +71,12 @@
   padding: 16px 40px;
   cursor: pointer;
   transition: background 0.2s;
+  text-decoration: none;
 }
 
 .ctaButton:hover {
   background: #3730a3;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {

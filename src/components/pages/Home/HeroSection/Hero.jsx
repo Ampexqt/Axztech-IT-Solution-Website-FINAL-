@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Hero.module.css';
 import logo from '../../../../assets/images/axztech-logo.png';
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Hero = () => (
   <section className={styles.hero}>
@@ -17,12 +18,12 @@ const Hero = () => (
           and expert IT services.
         </p>
         <div className={styles.buttons}>
-          <a href="#products" className={styles.primaryBtn}>
+          <Link to="/products" className={styles.primaryBtn}>
             Explore Our Products
-          </a>
-          <a href="#contact" className={styles.secondaryBtn}>
+          </Link>
+          <Link to="/contact" className={styles.secondaryBtn}>
             Contact Us <FaArrowRight className={styles.arrowIcon} />
-          </a>
+          </Link>
         </div>
       </div>
       <div className={styles.right}>

@@ -3,6 +3,7 @@ import styles from './footer.module.css';
 import logo from '../../assets/images/axztech-logo.png';
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -22,10 +23,10 @@ function Footer() {
         <div className={styles.footerSection}>
           <h4 className={styles.sectionTitle}>Quick Links</h4>
           <ul className={styles.linksList}>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/products">Products</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
           </ul>
         </div>
         {/* Contact Info */}

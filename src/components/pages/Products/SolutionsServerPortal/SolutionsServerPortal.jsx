@@ -17,7 +17,7 @@ const SolutionsServerPortal = () => {
             <div className={styles.sspFeatureItem}>
               <span className={styles.sspFeatureIcon}>
                 {/* Shield SVG */}
-                <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="8" fill="#EEF0FF"/><path d="M16 10.5l5 2.5v3.5c0 3.038-2.462 5.5-5.5 5.5S10.5 19.538 10.5 16.5V13l5-2.5z" stroke="#3B47FD" strokeWidth="1.5"/></svg>
+                <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="10" fill="#EEF0FF"/><path d="M20 13.125l6.25 3.125v4.375c0 3.797-3.078 6.875-6.875 6.875S12.5 24.422 12.5 20.625V15.625L20 13.125z" stroke="#3B47FD" strokeWidth="1.5"/></svg>
               </span>
               <div>
                 <div className={styles.sspFeatureTitle}>Advanced Security</div>
@@ -27,7 +27,7 @@ const SolutionsServerPortal = () => {
             <div className={styles.sspFeatureItem}>
               <span className={styles.sspFeatureIcon}>
                 {/* Performance SVG */}
-                <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="8" fill="#EEF0FF"/><path d="M12 20h8M12 16h8M12 12h8" stroke="#3B47FD" strokeWidth="1.5" strokeLinecap="round"/></svg>
+                <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="10" fill="#EEF0FF"/><path d="M15 25h10M15 20h10M15 15h10" stroke="#3B47FD" strokeWidth="1.5" strokeLinecap="round"/></svg>
               </span>
               <div>
                 <div className={styles.sspFeatureTitle}>High Performance</div>
@@ -37,7 +37,7 @@ const SolutionsServerPortal = () => {
             <div className={styles.sspFeatureItem}>
               <span className={styles.sspFeatureIcon}>
                 {/* Scalability SVG */}
-                <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="8" fill="#EEF0FF"/><path d="M16 10v12M10 16h12" stroke="#3B47FD" strokeWidth="1.5" strokeLinecap="round"/></svg>
+                <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="10" fill="#EEF0FF"/><path d="M20 12.5v15M12.5 20h15" stroke="#3B47FD" strokeWidth="1.5" strokeLinecap="round"/></svg>
               </span>
               <div>
                 <div className={styles.sspFeatureTitle}>Scalability</div>

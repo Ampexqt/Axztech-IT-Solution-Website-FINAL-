@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './WhyChooseSection.module.css';
+import { Link } from 'react-router-dom';
 
 function WhyChooseSection() {
   return (
@@ -20,7 +21,7 @@ function WhyChooseSection() {
       <div className={styles.ctaSection}>
         <h3 className={styles.ctaTitle}>Ready to transform your IT business?</h3>
         <p className={styles.ctaSubtitle}>Contact us today to learn how our solutions can help your business grow.</p>
-        <button className={styles.ctaButton}>Get in Touch</button>
+        <Link to="/contact" className={styles.ctaButton}>Get in Touch</Link>
       </div>
     </section>
   );
