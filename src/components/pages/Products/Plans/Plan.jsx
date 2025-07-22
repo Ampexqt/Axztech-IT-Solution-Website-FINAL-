@@ -93,13 +93,27 @@ function usePlansPerView() {
 function Plan() {
   const plansPerView = usePlansPerView();
   const [startIdx, setStartIdx] = useState(0);
+  const [animating, setAnimating] = useState(false);
+  const [direction, setDirection] = useState(''); // 'left' or 'right'
 
   const handlePrev = () => {
-    setStartIdx((prev) => (prev - 1 + plans.length) % plans.length);
+    if (animating) return;
+    setDirection('left');
+    setAnimating(true);
+    setTimeout(() => {
+      setStartIdx((prev) => (prev - 1 + plans.length) % plans.length);
+      setAnimating(false);
+    }, 180); // match CSS duration
   };
 
   const handleNext = () => {
-    setStartIdx((prev) => (prev + 1) % plans.length);
+    if (animating) return;
+    setDirection('right');
+    setAnimating(true);
+    setTimeout(() => {
+      setStartIdx((prev) => (prev + 1) % plans.length);
+      setAnimating(false);
+    }, 180); // match CSS duration
   };
 
   const visiblePlans = [];
@@ -128,7 +142,12 @@ function Plan() {
             <span className={styles.arrowIcon}>&lt;</span>
           </button>
         )}
-        <div className={styles.plansContainer}>
+        <div
+          className={[
+            styles.plansContainer,
+            animating ? (direction === 'right' ? styles.slideRight : styles.slideLeft) : '',
+          ].join(' ')}
+        >
           {visiblePlans.map((plan, idx) => (
             <div
               key={plan.title}
