@@ -3,6 +3,7 @@ import styles from './OurProducts.module.css';
 import SolutionsServerPortal from '../SolutionsServerPortal/SolutionsServerPortal';
 import KeyFeatures from '../KeyFeatures/KeyFeatures.jsx';
 import Plan from '../Plans/Plan';
+import CustomSolution from '../CustomSolution/CustomSolution';
 
 const OurProducts = () => {
   return (
@@ -14,6 +15,7 @@ const OurProducts = () => {
       <SolutionsServerPortal />
       <KeyFeatures />
       <Plan />
+      <CustomSolution />
     </div>
   );
 };
